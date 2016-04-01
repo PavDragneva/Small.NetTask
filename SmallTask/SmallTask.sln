@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallTask.Data", "Data\Smal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallTask.Web", "Web\SmallTask.Web.csproj", "{6D1FA3E6-9EF7-41FA-A301-DF04CD714CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallTask.Services", "SmallTask.Services\SmallTask.Services.csproj", "{10B16A1E-09C6-4659-B7D3-D4EF63B0D0CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{6D1FA3E6-9EF7-41FA-A301-DF04CD714CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D1FA3E6-9EF7-41FA-A301-DF04CD714CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D1FA3E6-9EF7-41FA-A301-DF04CD714CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10B16A1E-09C6-4659-B7D3-D4EF63B0D0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B16A1E-09C6-4659-B7D3-D4EF63B0D0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B16A1E-09C6-4659-B7D3-D4EF63B0D0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B16A1E-09C6-4659-B7D3-D4EF63B0D0CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +58,6 @@ Global
 		{24193456-3BC0-48E9-97CC-E72649F935D8} = {84FB9F2E-C54A-443F-BA9A-325B5F7F2D0D}
 		{B2E781B1-826A-4AE9-B7DD-0FAA3A9C1D91} = {946D04BF-332A-40FA-9396-0091497CC4CD}
 		{6D1FA3E6-9EF7-41FA-A301-DF04CD714CCB} = {832846C9-2D05-48D1-B765-A15798501CF1}
+		{10B16A1E-09C6-4659-B7D3-D4EF63B0D0CA} = {C97A78B9-6483-4CBC-B237-D97BD525E166}
 	EndGlobalSection
 EndGlobal
