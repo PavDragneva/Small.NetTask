@@ -1,0 +1,15 @@
+﻿@using SmallTask.Web.Models.User;
+@model IEnumerable<ListUsersViewModel>
+@{
+    ViewBag.Title = "All Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Users</h2>
+
+@foreach(var user in Model)
+{
+    <div class="well col-md-4">
+        @user.FirstName
+    </div>
+}

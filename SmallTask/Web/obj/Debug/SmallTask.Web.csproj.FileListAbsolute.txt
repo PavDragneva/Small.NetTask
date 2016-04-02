@@ -54,3 +54,15 @@ C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Web.Mvc.xml
 C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\obj\Debug\SmallTask.Web.csprojResolveAssemblyReference.cache
 C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\obj\Debug\SmallTask.Web.dll
 C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\obj\Debug\SmallTask.Web.pdb
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\AutoMapper.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\Newtonsoft.Json.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\SmallTask.Services.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Web.Http.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\SmallTask.Services.pdb
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\AutoMapper.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\Newtonsoft.Json.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Web.Http.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Web.Http.WebHost.xml

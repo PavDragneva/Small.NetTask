@@ -44,6 +44,20 @@
     <Compile Include="UserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\SmallTask.Common\SmallTask.Common.csproj">
+      <Project>{24193456-3bc0-48e9-97cc-e72649f935d8}</Project>
+      <Name>SmallTask.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\SmallTask.Data\SmallTask.Data.csproj">
+      <Project>{b2e781b1-826a-4ae9-b7dd-0faa3a9c1d91}</Project>
+      <Name>SmallTask.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\SmallTask.Models\SmallTask.Models.csproj">
+      <Project>{d0e71223-0381-40d5-a982-9888fa1a526c}</Project>
+      <Name>SmallTask.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

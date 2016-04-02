@@ -1,0 +1,17 @@
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\SmallTask.Services.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\SmallTask.Services.pdb
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\SmallTask.Common.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\SmallTask.Data.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\SmallTask.Models.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\EntityFramework.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\SmallTask.Common.pdb
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\SmallTask.Data.pdb
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\SmallTask.Models.pdb
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\EntityFramework.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\obj\Debug\SmallTask.Services.csprojResolveAssemblyReference.cache
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\obj\Debug\SmallTask.Services.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\SmallTask.Services\obj\Debug\SmallTask.Services.pdb
