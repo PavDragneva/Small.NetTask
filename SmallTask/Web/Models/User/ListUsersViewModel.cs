@@ -6,31 +6,29 @@
     using SmallTask.Models;
     using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
+    using AutoMapper;
+    using System;
 
-    public class ListUsersViewModel: IMapFrom<User>
+    public class ListUsersViewModel : IMapFrom<User>, IHaveCustomMappings
     {
         public string Id { get; set; }
 
-        [Required(ErrorMessage = ModelsConstants.RequiredFieldErrorMessage)]
-        [DisplayName("First name")]
-        [StringLength(ModelsConstants.NameMaximalLength,
-    MinimumLength = ModelsConstants.NameMimimalLength,
-    ErrorMessage = ModelsConstants.NameLengthErrorMessage)]
-        public string FirstName { get; set; }
+        [DisplayName("Full name")]
+        public string FullName { get; set; }
 
-        [DisplayName("Last name")]
-        [StringLength(ModelsConstants.NameMaximalLength,
-            MinimumLength = ModelsConstants.NameMimimalLength,
-            ErrorMessage = ModelsConstants.NameLengthErrorMessage)]
-        public string LastName { get; set; }
-
-        [Required(ErrorMessage = ModelsConstants.RequiredFieldErrorMessage)]
         [DisplayName("Gender")]
         public bool IsMale { get; set; }
 
-        [Url(ErrorMessage = ModelsConstants.InvalidFieldErrorMessage)]
         public string PhotoUrl { get; set; }
 
+        public string Telephone { get; set; }
+
         public Status Status { get; set; }
+
+        public void CreateMappings(IConfiguration configuration)
+        {
+            configuration.CreateMap<User, ListUsersViewModel>()
+                .ForMember(m => m.FullName, opt => opt.MapFrom(x => x.FirstName + " " + x.LastName));
+        }
     }
 }

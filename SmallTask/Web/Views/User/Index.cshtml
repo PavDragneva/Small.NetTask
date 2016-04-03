@@ -5,11 +5,30 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>All Users</h2>
-
-@foreach(var user in Model)
+<h2 class="jumbotron text-center">All Users</h2>
+@foreach (var user in Model)
 {
-    <div class="well col-md-4">
-        @user.FirstName
+    <div class="col-md-4 center-block">
+        <div class="panel panel-info col-md-10">
+            <div class="panel panel-heading text-center">
+                <h3>@user.FullName</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    @Html.DisplayFor(m => user.IsMale, "Gender", new { @class="pull-left"})
+                    <span class="pull-right"><span class="fa fa-phone"> </span>@user.Telephone</span>
+                </div>
+                <br/>
+                <div class="row">
+                    @Html.DisplayFor(m => user.PhotoUrl, "ProfilePicture")
+                </div>
+                <br />
+                <div class="row">
+                    <input type="checkbox"  data-toggle="toggle" checked data-on="Active" data-off="Inactive"/>
+                    <input type="button" class="btn btn-danger pull-right" value="Delete"/>
+                </div>
+            </div>
+        </div>
     </div>
 }
+<div class="clearfix"></div>

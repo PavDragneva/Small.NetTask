@@ -1,0 +1,11 @@
+﻿@model string
+
+@if (Model == null)
+{
+    <img src="~/Images/default-profile.png" alt="Profile picture" class="img-responsive" />
+}
+else
+
+{
+    <img src=@Model alt="Profile picture" class="img-responsive"/>
+}

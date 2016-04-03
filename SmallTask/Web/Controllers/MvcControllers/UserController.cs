@@ -13,7 +13,8 @@
         {
             this.userService = userService;
         }
-
+        
+        [HttpGet]
         public ActionResult Index()
         {
             var allUsers = this.userService.AllUsersNotDeleted().ProjectTo<ListUsersViewModel>();
