@@ -66,3 +66,7 @@ C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\Newtonsoft.Json.xm
 C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Net.Http.Formatting.xml
 C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Web.Http.xml
 C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\PagedList.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\PagedList.Mvc.dll
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\PagedList.xml
+C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Web\bin\PagedList.Mvc.xml

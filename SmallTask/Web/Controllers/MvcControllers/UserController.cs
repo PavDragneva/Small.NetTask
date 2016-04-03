@@ -1,7 +1,9 @@
 ﻿namespace SmallTask.Web.Controllers
 {
     using AutoMapper.QueryableExtensions;
+    using Common.Constants;
     using Models.User;
+    using PagedList;
     using Services.Contracts;
     using System.Web.Mvc;
 
@@ -15,12 +17,11 @@
         }
         
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
+            int pageNumber = (page ?? 1);
             var allUsers = this.userService.AllUsersNotDeleted().ProjectTo<ListUsersViewModel>();
-            return View("Index", allUsers);
+            return View("Index", allUsers.ToPagedList(pageNumber, ControllersConstants.PageSize));
         }
-
-
     }
 }

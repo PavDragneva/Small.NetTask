@@ -1,5 +1,6 @@
 ﻿@using SmallTask.Web.Models.User;
-@model IEnumerable<ListUsersViewModel>
+@using SmallTask.Common.Enums;
+@model PagedList.PagedList<ListUsersViewModel>
 @{
     ViewBag.Title = "All Users";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -24,11 +25,20 @@
                 </div>
                 <br />
                 <div class="row">
+                    @if (user.Status == Status.Active)
+                    {
                     <input type="checkbox"  data-toggle="toggle" checked data-on="Active" data-off="Inactive"/>
+                    }
+                    else
+                    {
+                        <input type="checkbox" data-toggle="toggle" data-on="Active" data-off="Inactive" />
+                    }
                     <input type="button" class="btn btn-danger pull-right" value="Delete"/>
                 </div>
             </div>
         </div>
     </div>
 }
+<div class="clearfix"></div>
+@Html.Partial("_Paging", Model)
 <div class="clearfix"></div>
