@@ -5,7 +5,9 @@
     using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using Microsoft.AspNet.Identity.EntityFramework;
-
+    using System.Threading.Tasks;
+    using System.Security.Claims;
+    using Microsoft.AspNet.Identity;
     public class User : IdentityUser
     {
         [Required(ErrorMessage = ModelsConstants.RequiredFieldErrorMessage)]

@@ -9,7 +9,7 @@
 
     public class UserController : Controller
     {
-        IUserService userService;
+        private IUserService userService;
 
         public UserController(IUserService userService)
         {

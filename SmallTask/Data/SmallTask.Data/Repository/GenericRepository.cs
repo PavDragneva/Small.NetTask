@@ -4,10 +4,11 @@
     using System.Data.Entity;
     using System.Linq;
     using System.Linq.Expressions;
+    using System.Threading.Tasks;
 
     public class GenericRepository<T> : IRepository<T> where T : class
     {
-        public GenericRepository(ISmallTaskDbContext context)
+        public GenericRepository(SmallTaskDbContext context)
         {
             if (context == null)
             {
@@ -20,7 +21,7 @@
 
         protected IDbSet<T> DbSet { get; set; }
 
-        protected ISmallTaskDbContext Context { get; set; }
+        protected SmallTaskDbContext Context { get; set; }
 
         public virtual IQueryable<T> All()
         {
@@ -104,6 +105,11 @@
         public void Dispose()
         {
             this.Context.Dispose();
+        }
+
+        public Task<int> SaveChangesAsync()
+        {
+            return this.Context.SaveChangesAsync();
         }
     }
 }

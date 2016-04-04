@@ -11,11 +11,11 @@
         protected void Application_Start()
         {
             AutoMapperConfig.RegisterMappings(AssembliesConstants.MvcProject);
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new RazorViewEngine());
             DatabaseConfig.Initialize();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
 }

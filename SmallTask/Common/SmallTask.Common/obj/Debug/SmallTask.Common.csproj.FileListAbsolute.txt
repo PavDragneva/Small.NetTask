@@ -1,5 +1,0 @@
-C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Common\SmallTask.Common\bin\Debug\SmallTask.Common.dll
-C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Common\SmallTask.Common\bin\Debug\SmallTask.Common.pdb
-C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Common\SmallTask.Common\obj\Debug\SmallTask.Common.csprojResolveAssemblyReference.cache
-C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Common\SmallTask.Common\obj\Debug\SmallTask.Common.dll
-C:\Users\Pav\Documents\GitHub\Small.NetTask\SmallTask\Common\SmallTask.Common\obj\Debug\SmallTask.Common.pdb

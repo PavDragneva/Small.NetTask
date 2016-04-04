@@ -1,5 +1,4 @@
 ﻿@using SmallTask.Web.Models.User;
-@using SmallTask.Common.Enums;
 @model PagedList.PagedList<ListUsersViewModel>
 @{
     ViewBag.Title = "All Users";
@@ -7,38 +6,25 @@
 }
 
 <h2 class="jumbotron text-center">All Users</h2>
-@foreach (var user in Model)
-{
-    <div class="col-md-4 center-block">
-        <div class="panel panel-info col-md-10">
-            <div class="panel panel-heading text-center">
-                <h3>@user.FullName</h3>
-            </div>
-            <div class="panel-body">
-                <div class="row">
-                    @Html.DisplayFor(m => user.IsMale, "Gender", new { @class="pull-left"})
-                    <span class="pull-right"><span class="fa fa-phone"> </span>@user.Telephone</span>
-                </div>
-                <br/>
-                <div class="row">
-                    @Html.DisplayFor(m => user.PhotoUrl, "ProfilePicture")
-                </div>
-                <br />
-                <div class="row">
-                    @if (user.Status == Status.Active)
-                    {
-                    <input type="checkbox"  data-toggle="toggle" checked data-on="Active" data-off="Inactive"/>
-                    }
-                    else
-                    {
-                        <input type="checkbox" data-toggle="toggle" data-on="Active" data-off="Inactive" />
-                    }
-                    <input type="button" class="btn btn-danger pull-right" value="Delete"/>
-                </div>
-            </div>
-        </div>
-    </div>
-}
+@Html.Partial("_Users", Model)
 <div class="clearfix"></div>
 @Html.Partial("_Paging", Model)
 <div class="clearfix"></div>
+
+<script>
+    (function () {
+        $(".delete-button").on("click", function () {
+            $.ajax({
+                type: 'Put',
+                url: '/api/apiuser/deleteuser/' + this.id
+            });
+        });
+
+        $(".activator").on("change", function () {
+            $.ajax({
+                type: 'Put',
+                url: '/api/apiuser/updatestatus/' + $(this).val()
+            });
+        });
+    }())
+</script>
