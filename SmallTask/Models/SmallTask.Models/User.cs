@@ -28,8 +28,6 @@
         public bool IsMale { get; set; }
 
         [Required(ErrorMessage = ModelsConstants.RequiredFieldErrorMessage)]
-        [RegularExpression(@"^(?([0-9]{3}))?[-. ]?([0-9]{3})[-. ]?([0-9]{4}).*$",
-            ErrorMessage = ModelsConstants.InvalidFieldErrorMessage)]
         [StringLength(ModelsConstants.NumberMaximalLength,
             MinimumLength = ModelsConstants.NumberMinimalLength,
             ErrorMessage = ModelsConstants.PhoneNumberLengthErrorMessage)]

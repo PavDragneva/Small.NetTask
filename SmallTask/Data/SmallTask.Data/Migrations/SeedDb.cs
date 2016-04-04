@@ -17,14 +17,15 @@
             {
                 for (int i = 0; i <= 25; i++)
                 {
-                    CreateNewUser("MyFirstName" + i, "MyLastName" + i, i%2 == 0, "0885-67-586" + i, i%3, "MySecretName" + i);
+                   var user = CreateNewUser("FName" + i, "MyLastName" + i, i%2 == 0, "0888/23-12-1" + i, i%3, "MySecretName" + i);
+                    context.Users.Add(user);
                 }
 
                 context.SaveChanges();
             }
         }
 
-        private static void CreateNewUser(string firstName, string lastName, bool isMale, string telephone, int status, string userName)
+        private static User CreateNewUser(string firstName, string lastName, bool isMale, string telephone, int status, string userName)
         {
             var user = new User();
             user.FirstName = firstName;
@@ -36,8 +37,10 @@
 
             if(isMale)
             {
-                user.PhotoUrl = "http:///rollycat.com/wp-content/uploads/2016/03/test.jpg";
+                user.PhotoUrl = "http://rollycat.com/wp-content/uploads/2016/03/test.jpg";
             }
+
+            return user;
         }
     }
 }

@@ -5,10 +5,14 @@
     ViewBag.Title = "All Users";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@Scripts.Render("~/bundles/myScripts")
 
 <h2 class="jumbotron text-center">All Users</h2>
 @Html.Partial("_Users", Model)
 <div class="clearfix"></div>
 @Html.Partial("_Paging", Model)
 <div class="clearfix"></div>
+@section scripts{
+
+@Scripts.Render("~/bundles/myScripts")
+
+}
