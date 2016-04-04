@@ -1,16 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - List Of Users</title>
-    <link href="~/Content/bootstrap.css" rel="stylesheet"/>
-    <link href="~/Content/font-awesome.css" rel="stylesheet"/>
+    @Scripts.Render("~/bundles/scripts")
+    @Styles.Render("~/Content/css")
     <link href="~/Content/bootstrap-toggle.less" rel="stylesheet"/>
-    <script src="~/Scripts/jquery-2.2.2.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/bootstrap-toggle.js"></script>
-    <script src="~/Scripts/App/user-buttons.js"></script>
 </head>
 <body>
     <div class="container body-content">

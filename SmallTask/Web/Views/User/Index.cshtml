@@ -1,30 +1,14 @@
 ﻿@using SmallTask.Web.Models.User;
+@using System.Web.Optimization
 @model PagedList.PagedList<ListUsersViewModel>
 @{
     ViewBag.Title = "All Users";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@Scripts.Render("~/bundles/myScripts")
 
 <h2 class="jumbotron text-center">All Users</h2>
 @Html.Partial("_Users", Model)
 <div class="clearfix"></div>
 @Html.Partial("_Paging", Model)
 <div class="clearfix"></div>
-
-<script>
-    (function () {
-        $(".delete-button").on("click", function () {
-            $.ajax({
-                type: 'Put',
-                url: '/api/apiuser/deleteuser/' + this.id
-            });
-        });
-
-        $(".activator").on("change", function () {
-            $.ajax({
-                type: 'Put',
-                url: '/api/apiuser/updatestatus/' + $(this).val()
-            });
-        });
-    }())
-</script>

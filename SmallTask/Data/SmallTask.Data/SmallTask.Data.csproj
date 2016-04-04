@@ -60,12 +60,17 @@
   <ItemGroup>
     <Compile Include="ISmallTaskDbContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\SeedDb.cs" />
     <Compile Include="Repository\GenericRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="SmallTaskDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\SmallTask.Common\SmallTask.Common.csproj">
+      <Project>{24193456-3bc0-48e9-97cc-e72649f935d8}</Project>
+      <Name>SmallTask.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Models\SmallTask.Models\SmallTask.Models.csproj">
       <Project>{d0e71223-0381-40d5-a982-9888fa1a526c}</Project>
       <Name>SmallTask.Models</Name>

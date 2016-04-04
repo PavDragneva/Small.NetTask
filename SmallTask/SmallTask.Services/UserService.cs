@@ -51,11 +51,12 @@
 
         public async Task DeleteUser(string id)
         {
-            var userForDelete = this.users.All()
-                .Where(u => u.Id == id)
-                .FirstOrDefault();
+            var userForDelete = GetById(id);
 
-            userForDelete.Status = Status.Deleted;
+            if (userForDelete != null)
+            {
+                userForDelete.Status = Status.Deleted;
+            }
 
             await this.users.SaveChangesAsync();
         }

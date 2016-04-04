@@ -20,11 +20,11 @@
                 <div class="row">
                     @if (user.Status == Status.Active)
                     {
-                        <input type="checkbox" data-toggle="toggle" checked data-on="Active" data-off="Inactive" class="activator"/>
+                        <input type="checkbox" data-toggle="toggle" data-id="@user.Id" checked data-on="Active" data-off="Inactive" class="activator"/>
                     }
                     else
                     {
-                        <input type="checkbox" data-toggle="toggle" data-on="Active" data-off="Inactive" class="activator" value=@user.Id/>
+                        <input type="checkbox" data-toggle="toggle" data-id="@user.Id" data-on="Active" data-off="Inactive" class="activator"/>
                     }
                     <input type="button" class="btn btn-danger pull-right delete-button" value="Delete" id=@user.Id/>
                 </div>

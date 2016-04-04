@@ -1,16 +1,27 @@
-﻿
-(function() {
-    $(".delete-button").on("click", function (clicked_id) {
+﻿(function () {
+    $(".delete-button").on("click", function () {
         $.ajax({
-            type: 'Delete',
-            url: '/api/apiuser/' + clicked_id
+            type: 'Put',
+            url: '/api/apiuser/deleteuser/' + this.id,
+            success: function (response) {
+                window.location.href = "/User/Index";
+            },
+            error: function (error) {
+                console.log(error);
+            }
         });
     });
 
     $(".activator").on("change", function () {
         $.ajax({
             type: 'Put',
-            url: '/api/apiuser/' + $(this).val()
+            url: '/api/apiuser/updatestatus/' + $(this).attr("data-id"),
+            success: function (response) {
+                window.location.href = "/User/Index";
+            },
+            error: function (error) {
+                console.log(error);
+            }
         });
     });
 }())

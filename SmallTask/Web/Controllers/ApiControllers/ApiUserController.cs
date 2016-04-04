@@ -14,16 +14,25 @@
         }
 
         [HttpPut]
-        public IHttpActionResult UpdateStatus(string id)
+        public async Task<IHttpActionResult> UpdateStatus(string id)
         {
-            this.userService.UpdateStatus(id);
+            if (id == null)
+            {
+                return this.BadRequest("You're id shouldn't be null");
+            }
+
+            await this.userService.UpdateStatus(id);
             return this.Ok();
         }
 
         [HttpPut]
-        public IHttpActionResult DeleteUser(string id)
+        public async Task<IHttpActionResult> DeleteUser(string id)
         {
-            var list = this.userService.DeleteUser(id);
+            if(id == null)
+            {
+                return this.BadRequest("You're id shouldn't be null");
+            }
+            await this.userService.DeleteUser(id);
             return this.Ok();
         }
     }
